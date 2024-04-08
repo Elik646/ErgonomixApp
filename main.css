@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #02014f;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header {
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: fixed;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    left: 20px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    text-decoration: none;
+    position: relative;
+    left: 1200px;
+    top: -55px;
+}
+
+.navbar a:hover{
+    color: #b7d6ff;
+}
+
+.php {
+    font-weight: 500;
+}
+
+#logoutbtn {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 20px;
+    transition: .3s;
+    text-decoration: none;
+    position: relative;
+    left: 1070px;
+    top: -225px;
+    background-color: transparent;
+}
+
+#welcome {
+    font-size: 30px;
+    position: relative;
+    left: 45px;
+    top: -75px;
+}
+
+#nameofuser {
+    background: linear-gradient(#00a2ff, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 30px;
+    position: relative;
+    left: 205px;
+    top: -120px;
+}
+
+#calendar{
+    position: grid;
+    place-items: center;
+    width: 400px;
+    height: 400px;
+    size: 200px;
+}
+
+@keyframes smooth {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}

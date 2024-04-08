@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="../js/validation.js" defer></script>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../home/home.html" class="logo">Ergonomix. </a>
+
+        <nav class="navbar">
+            <a href="../home/home.html">Home</a>
+            <a href="../home/about.html">About</a>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form action="process-signup.php" method="post" id="signup" novalidate>
+            <div>
+                <input class="name" type="text" id="name" name="name" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Repeat Password">
+            </div>
+
+            <button>Sign Up</button>
+        </form>
+        <div class="a">
+            <a class="new" href="../login/login.php">Already have an account? Log in</a>
+        </div>
+    </div>
+</body>
+</html>

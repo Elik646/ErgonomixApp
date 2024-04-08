@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #02014d;
+}
+
+.header {
+    position: absolute;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    top: -315px;
+    left: -575px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    text-decoration: none;
+    top: -375px;
+    left: 575px;
+}
+
+.navbar a:hover{
+    color: #b7d6ff;
+}
+
+#calculator {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0,0%,80%);
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+    height: 710px;
+    max-width: 500px;
+    overflow: hidden;
+    animation: smooth 1.75s ease-out forwards;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0,0%,100%);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0,0%,90%);
+}
+
+button:active {
+    background-color: hsl(0,0%,80%);
+}
+
+.oper {
+    background-color: hsl(243, 100%, 70%);
+}
+
+.oper:hover {
+    background-color: hsl(243,100%,80%);
+}
+
+.oper:active {
+    background-color: hsl(243,100%,90%);
+}
+
+
+/* ANIMATIONS */
+
+@keyframes smooth {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}

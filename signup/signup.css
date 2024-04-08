@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: #fff;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02014d;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form {
+    width: 400px;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+
+.header {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 700;
+    top: -310px;
+    left: -575px;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.container {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    border: 1.5px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    animation: smooth 1.75s ease-out forwards;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    text-decoration: none;
+    top: -365px;
+    left: 600px;
+}
+
+.navbar a:hover{
+    color: #b7d6ff;
+}
+
+input, button {
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    transition: .5s;
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus, .submit-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+input:focus::placeholder{
+    color: #000;
+}
+
+.new {
+    text-transform: capitalize;
+    top:-20px; 
+    text-decoration: none;
+}
+
+.new:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+    height: 50px;
+    width: 120px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+/* ANIMATIONS */
+
+@keyframes smooth {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
